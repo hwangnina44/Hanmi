@@ -1,0 +1,50 @@
+@charset "utf-8";
+footer {
+  width: 100%;
+  background-color: #f8f9ff;
+  color: #797979;
+  padding: 20px 0;
+}
+footer .bottom-logo {
+  width: 195px;
+  padding: 40px 0;
+}
+footer .bottom-logo a {
+  width: 100%;
+}
+footer .bottom-logo a img {
+  width: 100%;
+  display: block;
+}
+footer .footer-des {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d9d9d9;
+}
+footer .footer-des p {
+  margin-bottom: 4px;
+}
+
+footer .footer-des p span {
+  color: #797979;
+  padding: 0 6px;
+  position: relative;
+}
+footer .footer-des p span:last-child:after {
+  display: block;
+  content: '';
+  width: 1px;
+  height: 18px;
+  background-color: #000;
+
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+footer .copy {
+  padding-top: 20px;
+}
+
+footer .copy p b {
+  color: #000;
+}

@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* index.css */
+body {
+  width: 100%;
+  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+header {
+  width: 100%;
+  height: 90px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .inner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 120px;
+}
+header h1 {
+  width: 240px;
+}
+
+header a img {
+  width: 100%;
+}
+header ul.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header ul.menu > li {
+  height: 100%;
+  padding: 0 20px;
+  position: relative;
+}
+header .menu > li > a {
+  position: relative;
+  font-size: 19px;
+  font-weight: 500;
+  color:#000;
+}
+header .menu > li > a::before {
+  display: block;
+  content: '';
+  width: 0px;
+  height: 4px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  bottom: -31px;
+  transform: translateX(-50%);
+}
+header .menu > li:hover > a::before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: #f04e28;
+  position: absolute;
+  left: 50%;
+  bottom: -31px;
+  transform: translateX(-50%);
+  z-index: 2;
+  transition: 0.3s ease-in-out;
+}
+header .menu .submenu {
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 60px;
+  text-align: center;
+  z-index: 7;
+  /* 스크립트로 설정 */
+  display: none;
+}
+header .menu .submenu li {
+  padding: 10px 0;
+}
+
+header .menu .submenu li a {
+  font-weight: 700;
+}
+header .menu .submenu li a:hover{
+  text-decoration: underline;
+}
+header .wrap {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  left: 0;
+  top: 90px;
+  z-index: 6;
+
+  display: none;
+}
