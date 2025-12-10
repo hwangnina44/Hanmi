@@ -8,9 +8,6 @@ $(function () {
       $('header .menu .submenu').stop().slideUp();
       $('header .wrap').stop().slideUp();
     });
-
-
-    
 });
 
 
